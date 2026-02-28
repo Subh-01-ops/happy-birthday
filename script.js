@@ -13,7 +13,14 @@ const fonts = [
   { family: 'Georgia, "Times New Roman", serif', style: "italic", weight: "500" },
   { family: '"Palatino Linotype", "Book Antiqua", serif', style: "normal", weight: "500" },
   { family: '"Segoe UI", Tahoma, sans-serif', style: "normal", weight: "500" },
-  { family: '"JetBrains Mono", ui-monospace, monospace', style: "normal", weight: "500" }
+  { family: '"JetBrains Mono", ui-monospace, monospace', style: "normal", weight: "500" },
+  { family: 'Arial, Helvetica, sans-serif', style: "normal", weight: "500" },
+  { family: 'Verdana, Geneva, sans-serif', style: "normal", weight: "500" },
+  { family: 'Tahoma, Geneva, sans-serif', style: "normal", weight: "500" },
+  { family: '"Gill Sans", "Gill Sans MT", Calibri, sans-serif', style: "normal", weight: "500" },
+  { family: '"Times New Roman", Times, serif', style: "italic", weight: "500" },
+  { family: '"Palatino Linotype", "Book Antiqua", Palatino, serif', style: "normal", weight: "500" },
+  { family: '"Courier New", Courier, monospace', style: "normal", weight: "500" }
 ];
 
 if (cycler && cyclerCurrent && cyclerNext) {
@@ -109,5 +116,6 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
 
 
