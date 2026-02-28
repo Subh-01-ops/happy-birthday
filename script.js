@@ -59,8 +59,8 @@ if (cycler && cyclerCurrent && cyclerNext) {
       cyclerNext.style.transform = "scale(1.03)";
 
       swapping = false;
-    }, 180);
-  }, 700);
+    }, 200);
+  }, 500);
 }
 
 window.addEventListener("scroll", () => {
@@ -109,3 +109,4 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
