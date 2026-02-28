@@ -60,7 +60,7 @@ if (cycler && cyclerCurrent && cyclerNext) {
 
       swapping = false;
     }, 200);
-  }, 500);
+  }, 300);
 }
 
 window.addEventListener("scroll", () => {
@@ -109,4 +109,5 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
 
