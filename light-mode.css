@@ -1,0 +1,69 @@
+﻿:root {
+  --background: #f8f7f4;
+  --foreground: #1a1a1f;
+  --secondary: #f0eeeb;
+  --muted-foreground: #6b6b76;
+  --accent: #9e7c3c;
+  --accent-foreground: #fefdfb;
+  --border: #e2e0db;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.site-header.scrolled {
+  background: rgba(248, 247, 244, 0.85);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero::before {
+  background: rgba(158, 124, 60, 0.12);
+}
+
+.nav-links a,
+.scroll-hint,
+.project-links a,
+.socials a,
+.footer-wrap a {
+  color: var(--muted-foreground);
+}
+
+.nav-links a:hover,
+.project-links a:hover,
+.socials a:hover,
+.footer-wrap a:hover,
+.scroll-hint:hover {
+  color: var(--foreground);
+}
+
+.btn-secondary {
+  color: var(--foreground);
+}
+
+.chips li {
+  background: rgba(158, 124, 60, 0.1);
+  color: var(--accent);
+}
+
+.project-card img {
+  background: #ffffff;
+}
+
+.contact-form,
+.form-success {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #ffffff;
+  color: var(--foreground);
+  border: 1px solid var(--border);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #8a8a96;
+}
