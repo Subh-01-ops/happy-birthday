@@ -483,6 +483,9 @@ h1 {
   .menu-toggle {
     display: inline-block;
   }
+  .container{
+    width: 80%;
+  }
 
   .nav-links {
     position: absolute;
@@ -510,5 +513,6 @@ h1 {
     align-items: flex-start;
   }
 }
+
 
 
