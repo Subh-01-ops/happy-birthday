@@ -136,7 +136,7 @@ h1 {
   line-height: 1.1;
   min-width: 9.4ch;
   padding: 0 0.08em;
-  margin-left: 0.1em;
+  margin-left: 10px;
 }
 
 .cycler-sizer {
@@ -510,3 +510,4 @@ h1 {
     align-items: flex-start;
   }
 }
+
