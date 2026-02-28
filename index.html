@@ -3,53 +3,249 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subh | Portfolio</title>
+  <meta name="description" content="Portfolio - Developer and Designer" />
+  <title>Portfolio - Developer and Designer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="index.html">Subh</a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
+  <header class="site-header" id="site-header">
+    <nav class="container nav">
+      <a href="#home" class="brand">Portfolio</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        Menu
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Hi, I am Subh</h1>
-      <p>
-        A talented programmer who enjoys building practical and creative digital solutions.
+  <main id="home">
+    <section class="hero container">
+      <p class="section-tag">Developer and Designer</p>
+      <h1>
+        Crafting digital experiences with
+        <span class="cycler-wrap" id="font-cycler" aria-label="precision">
+          <span class="cycler-sizer" aria-hidden="true">precision</span>
+          <span class="cycler-layer cycler-current" id="cycler-current" aria-hidden="true">precision</span>
+          <span class="cycler-layer cycler-next" id="cycler-next" aria-hidden="true">precision</span>
+        </span>
+      </h1>
+      <p class="hero-copy">
+        I build polished software and web experiences, blending thoughtful design with robust engineering to create interfaces that delight.
       </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Work</a>
+        <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to about section">Down</a>
     </section>
 
-    <section class="card">
-      <h2>About Subh</h2>
-      <p>
-        Subh has worked on multiple projects, from web applications to automation tools,
-        and continues to learn by solving real-world problems through code.
-      </p>
-      <p>
-        He is comfortable with multiple programming languages, including C, C++, Java,
-        Python, JavaScript, and more.
-      </p>
+    <section id="about" class="section container reveal">
+      <div class="section-head">
+        <p class="section-tag">About</p>
+        <h2>A bit about me</h2>
+      </div>
+      <div class="section-content">
+        <p>
+          I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.
+        </p>
+        <p>
+          In my spare time, I enjoy exploring new technologies, contributing to open source, and continuously expanding my skill set through side projects and learning.
+        </p>
+
+        <h3 class="mini-title">Technologies</h3>
+        <ul class="chips">
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Node.js</li>
+          <li>Tailwind CSS</li>
+          <li>Figma</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>What He Focuses On</h2>
-      <ul>
-        <li>Building useful and user-friendly applications</li>
-        <li>Writing clean, maintainable code</li>
-        <li>Learning new technologies and best practices</li>
-      </ul>
+    <section id="experience" class="section container reveal">
+      <p class="section-tag">Experience</p>
+      <h2>Where I've worked</h2>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <p class="period">2024 - Present</p>
+          <div>
+            <h3>Senior Frontend Engineer · Acme Corp</h3>
+            <p>Build and maintain critical components used to construct the frontend. Work closely with cross-functional teams to implement and advocate for best practices in web accessibility.</p>
+            <ul class="chips">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <p class="period">2022 - 2024</p>
+          <div>
+            <h3>Frontend Developer · Nova Studio</h3>
+            <p>Developed and shipped user-facing features across multiple client projects. Led the migration from a legacy codebase to a modern React architecture.</p>
+            <ul class="chips">
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>Styled Components</li>
+              <li>GraphQL</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <p class="period">2020 - 2022</p>
+          <div>
+            <h3>Web Developer · Digital Agency</h3>
+            <p>Built responsive, performant websites for various clients ranging from startups to established brands. Collaborated with designers to translate mockups into pixel-perfect interfaces.</p>
+            <ul class="chips">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>WordPress</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <p class="period">2019 - 2020</p>
+          <div>
+            <h3>Junior Developer · StartUp Inc</h3>
+            <p>Contributed to frontend and backend development of the core product. Gained experience in agile workflows and collaborative development practices.</p>
+            <ul class="chips">
+              <li>Node.js</li>
+              <li>React</li>
+              <li>MongoDB</li>
+              <li>Express</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container reveal">
+      <p class="section-tag">Projects</p>
+      <h2>Selected work</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="public/images/project-1.jpg" alt="Momentum" loading="lazy" />
+          <div>
+            <h3>Momentum</h3>
+            <p>A productivity dashboard that helps teams track progress and stay aligned on goals with real-time collaboration features.</p>
+            <ul class="chips">
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>Supabase</li>
+              <li>Tailwind CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="#">Live Site</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reverse">
+          <img src="public/images/project-2.jpg" alt="Lumina" loading="lazy" />
+          <div>
+            <h3>Lumina</h3>
+            <p>An AI-powered design system generator that creates cohesive component libraries from brand guidelines and color palettes.</p>
+            <ul class="chips">
+              <li>React</li>
+              <li>Python</li>
+              <li>OpenAI</li>
+              <li>Figma API</li>
+            </ul>
+            <div class="project-links">
+              <a href="#">Live Site</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="public/images/project-3.jpg" alt="Wavelength" loading="lazy" />
+          <div>
+            <h3>Wavelength</h3>
+            <p>A music discovery platform that curates personalized playlists using collaborative filtering and audio analysis algorithms.</p>
+            <ul class="chips">
+              <li>Node.js</li>
+              <li>React</li>
+              <li>PostgreSQL</li>
+              <li>Spotify API</li>
+            </ul>
+            <div class="project-links">
+              <a href="#">Live Site</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container reveal">
+      <div class="contact-grid">
+        <div>
+          <p class="section-tag">Contact</p>
+          <h2>Let's work together</h2>
+          <p class="contact-copy">
+            If you'd like to discuss a project or just say hi, I'm always down to chat. Feel free to reach out through the form or find me on socials.
+          </p>
+
+          <ul class="socials">
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com">GitHub</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://linkedin.com">LinkedIn</a></li>
+            <li><a href="mailto:hello@example.com">Email</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <form id="contact-form" class="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <div id="form-success" class="form-success" hidden>
+            <p class="success-title">Message sent</p>
+            <p>Thank you! I'll get back to you soon.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Subh. All rights reserved.</p>
+    <div class="container footer-wrap">
+      <p>Designed and Built with care</p>
+      <ul>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com">GitHub</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://linkedin.com">LinkedIn</a></li>
+        <li><a href="mailto:hello@example.com">Email</a></li>
+      </ul>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
