@@ -7,6 +7,17 @@ const cycler = document.getElementById("font-cycler");
 const cyclerCurrent = document.getElementById("cycler-current");
 const cyclerNext = document.getElementById("cycler-next");
 
+const themeLink = document.getElementById("theme-css");
+const themeBtn = document.getElementById("light-switch");
+
+let light = false;
+
+themeBtn.addEventListener("click", () => {
+  light = !light;
+  themeLink.href = light ? "light-mode.css" : "styles.css";
+});
+
+
 const fonts = [
   { family: '"Inter", system-ui, sans-serif', style: "normal", weight: "500" },
   { family: '"Trebuchet MS", sans-serif', style: "normal", weight: "500" },
@@ -116,6 +127,7 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
 
 
 
